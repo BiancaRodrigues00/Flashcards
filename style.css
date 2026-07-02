@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #a35f38;
 }
 
 .cartao {
@@ -23,8 +24,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #fff;
 }
 
 main {
     flex: 1;
+    text-decoration: none;
+}
+
+.cabecalho-link {
+    color: #fff;
 }
