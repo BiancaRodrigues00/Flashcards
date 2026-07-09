@@ -29,16 +29,19 @@ body {
 
 main {
     flex: 1;
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cabecalho-link {
     color: #fff;
-    font-size: 24px;
+    text-decoration: none;
 }
 
 h1 {
     color: #fff;
+    font-size: 24px;
 }
 
 footer {
@@ -49,7 +52,12 @@ footer {
 
 .cartao-interno {
     position: relative;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+}
 
+.cartao:hover .cartao-interno {
+    transform: rotateY(180deg);
 }
 
 .cartao-frente, .cartao-verso {
@@ -61,4 +69,9 @@ footer {
 
 .cartao-verso {
     transform: rotateY(180deg);
+}
+
+section {
+    display:flex;
+    gap: 16px;
 }
