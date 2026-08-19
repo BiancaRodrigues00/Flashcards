@@ -68,18 +68,23 @@ main {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 
     backface-visibility: hidden;
+    background-color: #fff;
 }
 
+/* IMAGEM */
 .cartao-imagem {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    height: 190px;
+    object-fit: contain;
+    display: block;
 }
 
+/* TEXTO */
 .cartao-frente p,
 .cartao-verso p {
-    padding: 15px;
+    padding: 8px 10px;
     text-align: center;
+    font-size: 14px;
 }
 
 .cartao-verso {
